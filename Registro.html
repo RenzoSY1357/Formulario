@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro.html</title>
+  </head>
+
+  <h1><i>Formulario de registro</i></h1>
+
+  <body>
+  <form>
+    <fieldset>
+        <legend><u>Informacion Personal</u></legend>
+
+        <p>
+          <label for="nombre"><strong>Nombre:</strong></label>
+          <input type ="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required>
+        </p>
+
+        <p>
+          <label for="apellido"><strong>Apellido:</strong></label>
+          <input type ="text" name="apellido" id="apellido" placeholder="Introduce tu apellido" required>
+        </p>
+
+        <p>
+          <label for="fecha"><strong>Fecha de nacimiento:</strong></label>
+          <input type ="date" name="fecha" id="fecha" required>
+        </p>
+
+        <p>
+          <label><strong>Genero:</strong>
+
+          <label>Masculino
+            <input type ="radio" name="genero" id="masculino" value="masculino" required>
+          </label>
+
+          <label>Femenino
+            <input type ="radio" name="genero" id="femenino" value="femenino" required>
+          </label>
+
+          <label>Otro
+            <input type ="radio" name="genero" id="otro" value="otro" required>
+          </label>
+
+          </label>
+        </p>
+        
+      </fieldset>
+
+    <fieldset>
+
+      <legend><u>Informacion de Contacto</u></legend>
+
+      <p>
+      <label for="email"><strong>Correo Electrónico: </strong></label>
+      <input type="email" name="email" placeholder="Introduce tu email" id="email" required>
+      </p>
+
+      <p>
+      <label for="telefono"><strong>Número de Teléfono: </strong></label>
+      <input type="tel" name="telefono" placeholder="+34 123 456 789" id="telefono" required>
+      </p>
+
+      <p>
+      <label><strong>Dirección: </strong></label>
+      <input type="text" name="direccion" placeholder="Introduce tu direccion" id="dirección">
+      </p>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend><u>Informacion de Cuenta</u></legend>
+
+      <p>
+        <label for="usuario"><strong>Nombre de Usuario: </strong></label>
+        <input type="text" name="usuario" placeholder="Elige un nombre de usuario" id="usuario">
+      </p>
+      
+      <p>
+        <label for="contraseña"><strong>Contraseña: </strong></label>
+        <input type="password" name="contraseña" placeholder="Introduce tu contraseña" id="contraseña" required>
+        <label for="contraseña"><strong>Confirmación: </strong></label>
+        <input type="password" name="confirmacion" placeholder="Repite tu contraseña" id="confirmacion" required>
+      </p>
+
+    </fieldset>
+
+    <fieldset>
+    <legend><u>Preferencias</u></legend>
+    
+    <p>
+      <label for="colores"><strong>Color favorito: </strong></label>
+      <select id="colores">
+
+        <option selected disabled value="0">Color</option>
+        <option value ="rojo">rojo</option>
+        <option value ="azul">azul</option>
+        <option value ="verde">verde</option>
+        <option value ="amarillo">amarillo</option>
+
+      </select>
+    </p>
+
+    <p>
+      <label><strong>Aceptar terminos y condiciones</strong></label>
+      <input type="checkbox" name="checkbox" id="checkbox" required>
+
+    </p>
+
+    </fieldset>
+
+    <p>
+      <input type ="submit" name="submit">
+    </p>
+  </form>
+  </body>
+</html>
